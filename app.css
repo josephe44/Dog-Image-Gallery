@@ -1,0 +1,53 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+body {
+  font-family: 'Festive', cursive;
+}
+/***** styling for the ids and classes *****/
+
+/* styling for the popup image */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 250ms;
+  padding: 50px;
+}
+
+/* styling for the selected Image  */
+#selectedImage{
+  max-height: 100%;
+}
+/* styling for the image gallery */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+/* styling for the container */
+.container {
+  max-width: 1200px;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+/* styling for each image in the gallery  */
+.galleryImg {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+/* styling for the hover effect */
+.galleryImg:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 10px #777;
+}
