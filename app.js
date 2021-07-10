@@ -8,7 +8,7 @@ const selectedIndex = null
 // outputting all images using the forEach array method and creating an img element, then append it to the gallery which is the 'div' parent.
 imageIndex.forEach((i) => {
   const image = document.createElement('img')
-  image.src = `/images/dog-${i}.jpg`
+  image.src = `./images/dog-${i}.jpg`
   image.alt = `image of dog ${i}`
   image.classList.add('galleryImg')
 
@@ -16,7 +16,7 @@ imageIndex.forEach((i) => {
   image.addEventListener('click', () => {
     // popup image when is been clicked
     popup.style.transform = `translateY(0)`
-    selectedImage.src = `/images/dog-${i}.jpg`
+    selectedImage.src = `./images/dog-${i}.jpg`
     selectedImage.alt = `image of dog ${i}`
   })
 
